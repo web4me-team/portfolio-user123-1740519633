@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartoon Style Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Cartoon" alt="Cartoon Avatar" width="100">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Tester A">Tester A</h1>
+          <p class="title">Experienced computer science student with a 4.0 GPA, actively involved in data analysis, program development, and tutoring.</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+        </button>
+      </div>
+      <div class="sidebar-info_more" data-sidebar-more>
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:xixi@gmail.com" class="contact-link">xixi@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:123-456-7890" class="contact-link">123-456-7890</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Iceland, china</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <i class="fab fa-github"></i> 
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <i class="fab fa-researchgate"></i> 
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon> <!-- LinkedIn icon (still using Ionicons) -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+        <section class="about-text">
+          <h2>👋 Hi, I'm Tester A</h2>
+          <p>Experienced computer science student with a 4.0 GPA, actively involved in data analysis, program development, and tutoring.</p>
+          <p>My research interests in Computer Science include Data Science, Software Development, and Education Technology.</p>
+          <h2>🔬 My Research Focus</h2>
+          <ul>
+            <li><strong>Computer Science:</strong> Data Science, Software Development, Education Technology</li>
+          </ul>
+          <p>When I’m not working on projects, you might find me tutoring students or contributing to open-source programs.</p>
+          <p class="contact">📧 Want to discuss computer science, research collaborations, or innovative tech ideas? Let’s connect! 🚀</p>
+        </section>
+      </article>
+
+      <article class="education" data-page="education">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="book-outline"></ion-icon> Education
+          </h2>
+        </header>
+        <section class="timeline">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Pasadena City College</h4>
+              <span>Fall 2019</span>
+              <p class="timeline-text">Computer Science - Computer Science</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of California, San Diego</h4>
+              <span>Expected 2024</span>
+              <p class="timeline-text">Computer Science - Expected Graduation: 2024</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="research" data-page="research">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="flask-outline"></ion-icon> Research
+          </h2>
+        </header>
+        <section class="timeline">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Elite round launched by Shimmer SDGs Hub</h4>
+              <span>04 / 2020 - 09 / 2020</span>
+              <p class="timeline-text">Data collection and analysis</p>
+              <p class="timeline-text">Weekly zoom meeting with group members to discuss progress</p>
+              <p class="timeline-text">Write research report based on data analysis</p>
+              <p class="timeline-text">Evaluated potential of a business plan based on environment protection</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Aid Tracker</h4>
+              <span>05 / 2020 - 10 / 2020</span>
+              <p class="timeline-text">Helped develop the small mini program 'Aid tracker' through taro (react)</p>
+              <p class="timeline-text">Debugged the program</p>
+              <p class="timeline-text">Opened source code on Github</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Nobel Education Center</h4>
+              <span>11 / 2019 - 04 / 2020</span>
+              <p class="timeline-text">Tutored students in AP Calculus and AP computer science</p>
+              <p class="timeline-text">Provided valuable feedback to students</p>
+              <p class="timeline-text">Communicated with students' parents about their progress</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Field Elementary School</h4>
+              <span></span>
+              <p class="timeline-text">Volunteered as a teacher assistant to tutor students</p>
+              <p class="timeline-text">Helped grade homework and organize the class</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="publications" data-page="publications">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="document-text-outline"></ion-icon> Publications
+          </h2>
+        </header>
+        <section class="timeline">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Good publication for testing</h4>
+              <p class="timeline-text"></p>
+            </li>
+          </ol>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    'use strict';
+
+    // Toggle sidebar contacts
+    const sidebar = document.querySelector("[data-sidebar]");
+    const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+    const sidebarMore = document.querySelector("[data-sidebar-more]");
+
+    sidebarBtn.addEventListener("click", function () {
+      sidebarMore.classList.toggle("active");
+      sidebarBtn.querySelector("span").textContent = sidebarMore.classList.contains("active") ? "Hide Contacts" : "Show Contacts";
+    });
+
+    // Handle navigation links
+    const navigationLinks = document.querySelectorAll("[data-nav-link]");
+    const pages = document.querySelectorAll("[data-page]");
+
+    navigationLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        navigationLinks.forEach(navLink => navLink.classList.remove("active"));
+        this.classList.add("active");
+
+        const pageName = this.textContent.toLowerCase().trim();
+        pages.forEach(page => page.classList.remove("active"));
+        const targetPage = document.querySelector(`[data-page="${pageName}"]`);
+        if (targetPage) {
+          targetPage.classList.add("active");
+          window.scrollTo(0, 0);
+        }
+      });
+    });
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
